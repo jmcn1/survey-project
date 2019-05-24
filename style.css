@@ -1,5 +1,6 @@
 #title {
     text-align: center;
+    background-color: gray;
 }
 #description {
     text-align: center;
@@ -9,4 +10,27 @@
 }
 #dropdown {
     
+}
+#top {
+    width: 800px;
+    height: 1000px;
+    margin-left: 20%;
+    margin-right: 25%;
+    background-color: gray;
+    color: white;
+}
+#labels {
+    text-align: left;
+}
+#name-label {
+    float: left;
+}
+#field {
+    float: center;
+}
+#email-label {
+    float: left;
+}
+#number-label {
+    float: left;
 }

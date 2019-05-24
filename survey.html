@@ -6,18 +6,45 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <div>
-        <h1 id="title">Full Stack Developer Survey</h1>
+        <h1 id="title">Developer Survey</h1>
     </div>
-    <div id="top">
         <p id="description">
-            What are the most frequently utilized tools by a Full Stack Developer?
+            What are the most frequently utilized tools by a Developer?
         </p>
-    </div>  
+  <form id="survey-form">  
+    <div id="top">
+        <div class="rowTab">
+      <div class="labels">
+        <p>Please provide some basic information</p>
+        <label id="name-label" for="name">Name: </label>
+      </div>
+      <div id="field">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <br>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <div id="field">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <br>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">Years of experience: </label>
+      </div>
+      <div id="field">
+        <input type="number" name="experience" id="number" min="1" max="99" class="input-field" placeholder="Yrs. of experience">
+      </div>
+      <br>
     <div class="rowTab">
             <div class="labels">
               <label for="POS">What is your current development role?</label>
             </div>
-            <div class="rightTab">
+            <div class="label">
               <ul style="list-style: none;">
                 <li class="radio"><label>Front-end<input name="radio-buttons" value="1"  type="radio" class="POS" ></label></li>
                 <li class="radio"><label>Back-end<input name="radio-buttons" value="2"  type="radio" class="POS" ></label></li>
@@ -37,64 +64,24 @@
           <option value="other">Other</option>
         </select>
     </div>
-</main>
-</html>
-  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
-    <div class="rowTab">
-      <div class="labels">
-        <label id="name-label" for="name">* Name: </label>
+    <br>
+     <div class="rowTab">
+      <div id="labels">
+        <label for="preferences">What do you consider the most important technologies to learn?: </label>
       </div>
-      <div class="rightTab">
-        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
-        <label id="email-label" for="email">* Email: </label>
-      </div>
-      <div class="rightTab">
-        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
-        <label id="number-label" for="age">* Age: </label>
-      </div>
-      <div class="rightTab">
-        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
-        <label for="most-like">What do you like most in FCC: </label>
-      </div>
-      <div class="rightTab">
-        <select id="most-like" name="mostLike" class="dropdown">
-      <option disabled selected value>Select an option</option>
-      <option value="challenges">Challenges</option>
-      <option value="projects">Projects</option>
-      <option value="community">Community</option>
-      <option value="openSource">Open Source</option>
-    </select>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
-        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
-      </div>
-      <div class="rightTab">
+      <div id="labels">
         <ul id="preferences" style="list-style: none;">
-          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
-          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
-          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
-          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
-          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
-          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label></li>
-          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
-          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
-          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
-          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
-          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">HTML/CSS</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">JavaScript</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Algorithms</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Bootstrap</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">jQuery</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Sass</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">React</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Redux</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">JSON</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Ajax</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Other (please comment below)</label></li>
         </ul>
       </div>
     </div>
@@ -109,3 +96,5 @@
     <button id="submit" type="submit">Submit</button>
   </form>
 </div>
+</main>
+</html>
